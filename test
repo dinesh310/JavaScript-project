@@ -1,0 +1,30 @@
+const promise2 = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        console.log("am 4th"),
+            resolve("failed the test case")
+    }, 2000);
+})
+let test;
+async function add() {
+    console.log("am 1st");
+    console.log("am 2nd");
+    console.log("am 3rd");
+    test = await promise2;
+    // promise2
+    //     .then(() => {
+    //         console.log("am 5th");
+    //     })
+    console.log("am 5th");
+    console.log(test)
+
+}
+
+//add().catch(function(error){
+ //   console.log(error)
+//});
+//console.log("test")
+console.log("AAA")
+add()
+console.log("B")
+
+
