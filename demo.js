@@ -26,7 +26,7 @@ const students = [
 
 for(let i = 0;i<students.length;i++){
 
-    //console.log(Object.keys(students[i]))
+    console.log(Object.keys(students[i]))
 
     for(let j = 0;j<students[i].length;j++){
         console.log(Object.keys(students[i]))
